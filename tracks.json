@@ -1,0 +1,231 @@
+{
+  "tracks": [
+    {
+      "trackId": "1",
+      "segments": [
+        {
+          "segmentId": "start-and-goal-1",
+          "type": "start-goal",
+          "nextSegments": [
+            "segment-1-bottleneck"
+          ]
+        },
+        {
+          "segmentId": "segment-1-bottleneck",
+          "type": "bottleneck",
+          "nextSegments": [
+            "segment-global-bottleneck"
+          ]
+        },
+        {
+          "segmentId": "segment-1-bottleneck-ret",
+          "type": "bottleneck-ret",
+          "nextSegments": [
+            "segment-1-2"
+          ]
+        },
+        {
+          "segmentId": "segment-1-2",
+          "type": "normal",
+          "nextSegments": [
+            "segment-1-3"
+          ]
+        },
+        {
+          "segmentId": "segment-1-3",
+          "type": "normal",
+          "nextSegments": [
+            "segment-1-4"
+          ]
+        },
+        {
+          "segmentId": "segment-1-4",
+          "type": "normal",
+          "nextSegments": [
+            "segment-1-caesar-link",
+            "segment-1-caesar-ret"
+          ]
+        },
+        {
+          "segmentId": "segment-1-caesar-link",
+          "type": "caesar-link",
+          "nextSegments": [
+            "segment-global-caesar"
+          ]
+        },
+        {
+          "segmentId": "segment-1-caesar-ret",
+          "type": "caesar-ret",
+          "nextSegments": [
+            "segment-1-6"
+          ]
+        },
+        {
+          "segmentId": "segment-1-6",
+          "type": "normal",
+          "nextSegments": [
+            "start-and-goal-1"
+          ]
+        }
+      ]
+    },
+    {
+      "trackId": "2",
+      "segments": [
+        {
+          "segmentId": "start-and-goal-2",
+          "type": "start-goal",
+          "nextSegments": [
+            "segment-2-bottleneck"
+          ]
+        },
+        {
+          "segmentId": "segment-2-bottleneck",
+          "type": "bottleneck",
+          "nextSegments": [
+            "segment-global-bottleneck"
+          ]
+        },
+        {
+          "segmentId": "segment-2-bottleneck-ret",
+          "type": "bottleneck-ret",
+          "nextSegments": [
+            "segment-2-2"
+          ]
+        },
+        {
+          "segmentId": "segment-2-2",
+          "type": "normal",
+          "nextSegments": [
+            "segment-2-3"
+          ]
+        },
+        {
+          "segmentId": "segment-2-3",
+          "type": "normal",
+          "nextSegments": [
+            "segment-2-4"
+          ]
+        },
+        {
+          "segmentId": "segment-2-4",
+          "type": "normal",
+          "nextSegments": [
+            "segment-2-caesar-link",
+            "segment-2-caesar-ret"
+          ]
+        },
+        {
+          "segmentId": "segment-2-caesar-link",
+          "type": "caesar-link",
+          "nextSegments": [
+            "segment-global-caesar"
+          ]
+        },
+        {
+          "segmentId": "segment-2-caesar-ret",
+          "type": "caesar-ret",
+          "nextSegments": [
+            "segment-2-6"
+          ]
+        },
+        {
+          "segmentId": "segment-2-6",
+          "type": "normal",
+          "nextSegments": [
+            "start-and-goal-2"
+          ]
+        }
+      ]
+    },
+    {
+      "trackId": "3",
+      "segments": [
+        {
+          "segmentId": "start-and-goal-3",
+          "type": "start-goal",
+          "nextSegments": [
+            "segment-3-bottleneck"
+          ]
+        },
+        {
+          "segmentId": "segment-3-bottleneck",
+          "type": "bottleneck",
+          "nextSegments": [
+            "segment-global-bottleneck"
+          ]
+        },
+        {
+          "segmentId": "segment-3-bottleneck-ret",
+          "type": "bottleneck-ret",
+          "nextSegments": [
+            "segment-3-2"
+          ]
+        },
+        {
+          "segmentId": "segment-3-2",
+          "type": "normal",
+          "nextSegments": [
+            "segment-3-3"
+          ]
+        },
+        {
+          "segmentId": "segment-3-3",
+          "type": "normal",
+          "nextSegments": [
+            "segment-3-4"
+          ]
+        },
+        {
+          "segmentId": "segment-3-4",
+          "type": "normal",
+          "nextSegments": [
+            "segment-3-caesar-link",
+            "segment-3-caesar-ret"
+          ]
+        },
+        {
+          "segmentId": "segment-3-caesar-link",
+          "type": "caesar-link",
+          "nextSegments": [
+            "segment-global-caesar"
+          ]
+        },
+        {
+          "segmentId": "segment-3-caesar-ret",
+          "type": "caesar-ret",
+          "nextSegments": [
+            "segment-3-6"
+          ]
+        },
+        {
+          "segmentId": "segment-3-6",
+          "type": "normal",
+          "nextSegments": [
+            "start-and-goal-3"
+          ]
+        }
+      ]
+    }
+  ],
+  "globalSegments": [
+    {
+      "segmentId": "segment-global-caesar",
+      "type": "global-caesar",
+      "nextSegments": [
+        "segment-1-caesar-ret",
+        "segment-2-caesar-ret",
+        "segment-3-caesar-ret"
+      ]
+    },
+    {
+      "segmentId": "segment-global-bottleneck",
+      "type": "global-bottleneck",
+      "nextSegments": [
+        "segment-1-bottleneck-ret",
+        "segment-2-bottleneck-ret",
+        "segment-3-bottleneck-ret"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+# Kopiere das Segment-Programm ins Image
+COPY segment_program.py /app/segment_program.py
+
+# Installiere das redis-py-cluster-Paket
+RUN pip install redis-py-cluster
+
+# Mache das Programm ausführbar
+RUN chmod +x /app/segment_program.py
+
+ENTRYPOINT ["python", "segment_program.py"]
+

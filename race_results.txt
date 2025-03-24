@@ -1,0 +1,15 @@
+Token token-1-1:
+  start-and-goal-1: 0.896462 seconds
+  segment-1-bottleneck: 0.900088 seconds
+  Gesamtzeit: 1.796551 seconds
+
+Token token-2-1:
+  start-and-goal-2: 1.189714 seconds
+  segment-2-bottleneck: 1.612858 seconds
+  Gesamtzeit: 2.802572 seconds
+
+Token token-3-1:
+  start-and-goal-3: 1.068202 seconds
+  segment-3-bottleneck: 1.107112 seconds
+  Gesamtzeit: 2.175314 seconds
+
